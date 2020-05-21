@@ -1,0 +1,67 @@
+fun string testString (string t) {
+     string a = "asd"
+     return a
+ }
+
+fun char testChar (char s) {
+    char a = 's'
+    return a
+}
+
+fun stringArray testArray (string ii) {
+    stringArray a = [ii]
+    return a
+}
+
+main {
+    string a = "abc"
+    string b = "abc"
+    string tests = ""
+    string c = [a+b]
+    string d = ["as"+"bc"]
+    string cc = testString(a)
+    char s = 'c'
+    char sd = s
+    char dss = 's'
+    char k = testChar(s)
+    tests = (string) s
+    print "--------"
+    print tests
+    print "--------"
+    stringArray as = [a, b]
+    stringArray asd = ["sad", "lel"]
+    stringArray test = testArray(b)
+    print "sdf"
+    print b
+    print a
+    if (s == sd)
+    {
+     print "Chars equals!"
+    }
+    if (a == b)
+    {
+     print "Strings equals!"
+    }
+    if (s == s)
+    {
+      print "Arrays equals!"
+     }
+    if (a != b) {
+        print "a!=b"
+    }else {
+        print "LALA"
+    }
+    while (b != a) {
+        print b
+        b = a
+    }
+    forEach (string se in as) {
+        print se
+    }
+    a = b + c + c
+    print a
+}
+
+fun testVoid (string a) {
+    print a
+}
